@@ -1,0 +1,97 @@
+name: Bug report
+description: Something behaves differently from what the documentation says it does.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Three symptoms are expected behaviour**, each with its own page: a loop that runs one
+        iteration and stops, a console command that is listed but does nothing outside Play, and
+        `Completed` not firing when the map changed or PIE ended.
+
+        [Read those first](https://github.com/StillCooking/StillCooking_Tools/blob/main/Documentation/project/issues.md)
+        — if one of them describes what you saw, the plugin is working as designed and the page
+        explains why.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before reporting
+      options:
+        - label: I read the three expected-behaviour cases, and this is not one of them.
+          required: true
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: "`VersionName` in the .uplugin, or the commit you are on if it is not a release."
+      placeholder: "0.8.0"
+    validations:
+      required: true
+
+  - type: input
+    id: engine-version
+    attributes:
+      label: Unreal Engine version
+      placeholder: "5.7.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: configuration
+    attributes:
+      label: Build configuration
+      description: >
+        Some entries are compiled out of some configurations, so this decides whether what you saw
+        is a bug at all.
+      options:
+        - Development Editor (PIE)
+        - Development
+        - Test
+        - Shipping
+        - Other, or not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened, and what you expected instead
+    validations:
+      required: true
+
+  - type: textarea
+    id: entry-and-pins
+    attributes:
+      label: The entry point and its pins
+      description: >
+        Which node or class, and the value of every pin that is not at its default — Auto Continue,
+        Items Per Tick, Timeout and Tick When Paused in particular.
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Minimal reproduction
+      description: >
+        A minimal graph or snippet. For a node, a screenshot with its pins visible; for a C++ core,
+        the Start() call with its parameters and the body.
+    validations:
+      required: true
+
+  - type: textarea
+    id: log
+    attributes:
+      label: Log, filtered on LogStillCooking
+      description: "Raise its verbosity first if the console registry is involved: `Log LogStillCooking Verbose`"
+      render: text
+    validations:
+      required: true
+
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else
+      description: Screenshots, a packaged build that differs from the editor, anything that narrows it down.

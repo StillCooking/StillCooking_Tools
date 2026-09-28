@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# GitHub language statistics: the plugin is C++, and Unreal headers are C++ headers.
+*.h linguist-language=C++

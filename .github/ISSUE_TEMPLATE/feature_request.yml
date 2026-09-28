@@ -1,0 +1,40 @@
+name: Feature request
+description: A node, a class or an option that is missing.
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This plugin is a grab-bag of small, reusable utilities, and the best requests start from a
+        problem in a real project rather than from an API you already designed. Both are welcome —
+        just lead with the problem.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What were you building, and where did the plugin stop being enough?
+    validations:
+      required: true
+
+  - type: textarea
+    id: workaround
+    attributes:
+      label: What you do instead today
+      description: >
+        The workaround, however ugly. It usually says more about the shape of the right solution
+        than a proposal does.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you have in mind
+      description: Optional. A node name, a pin, a function signature — whatever you already pictured.
+
+  - type: input
+    id: engine-version
+    attributes:
+      label: Unreal Engine version you are on
+      placeholder: "5.7.0"

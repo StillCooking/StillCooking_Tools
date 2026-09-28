@@ -1,0 +1,29 @@
+{
+	"FileVersion": 3,
+	"Version": 10,
+	"VersionName": "0.8.0",
+	"FriendlyName": "StillCooking_Tools",
+	"Description": "A grab-bag of small, reusable Unreal Engine utilities: base classes, helpers and common operations.",
+	"Category": "Other",
+	"CreatedBy": "StillCooking.dev",
+	"CreatedByURL": "https://stillcooking.dev",
+	"DocsURL": "https://github.com/StillCooking/StillCooking_Tools#readme",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/StillCooking/StillCooking_Tools/issues",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "StillCookingCore",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "StillCookingCoreEditor",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		}
+	]
+}

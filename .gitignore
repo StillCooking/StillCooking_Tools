@@ -1,0 +1,18 @@
+# Unreal build artifacts
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+
+# Visual Studio / Rider
+*.VC.db
+*.opensdf
+*.sdf
+*.suo
+.vs/
+.idea/
+
+# OS noise
+Thumbs.db
+.DS_Store
+desktop.ini

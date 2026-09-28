@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: What to include in a bug report
+    url: https://github.com/StillCooking/StillCooking_Tools/blob/main/Documentation/project/issues.md
+    about: The checklist the bug form follows, and the three symptoms that are expected behaviour.
+  - name: Documentation
+    url: https://github.com/StillCooking/StillCooking_Tools#documentation
+    about: Start here — quick start, reference pages, troubleshooting and diagnostics.
+  - name: Which engine versions are supported
+    url: https://github.com/StillCooking/StillCooking_Tools/blob/main/Documentation/project/compatibility.md
+    about: What has actually been built and tested, as opposed to what might load.
